@@ -1,0 +1,478 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renderToHtml(widget) <Inject /> nested widget renders correctly 1`] = `
+<head></head>
+
+<body>
+  <div id="0123456789abcdef">
+    <section>
+      <ul>
+        <li>27</li>
+        <li>72</li>
+        <li>
+          <section>625</section>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <script type="text/javascript">
+    Object.assign(["__WIDGET_DATA__", "nested--injected", "0123456789abcdef"].reduce(function(a, b) {
+      return a[b] = a[b] || {};
+    }, window), {
+      "props": {
+        "coefficient": 9
+      },
+      "hydration": {
+        "nested--injected--27152bfa9d152695b053e71d6ee08263979ed379d64fa16bfd8efdbf85ee0ffa": {
+          "v": 3,
+          "w": 8
+        },
+        "simple--injected--f042b037451958bdc45147be8b9d937045a13c3523f59ba3514bebb4db43730c": {
+          "baseValue": 5
+        }
+      }
+    });
+  </script>
+</body>
+`;
+
+exports[`renderToHtml(widget) <Inject /> regular component with mount point className renders as a regular element 1`] = `
+<head></head>
+
+<body>
+  <div>
+    <div data-reactroot="">Hello ;)</div>
+  </div>
+</body>
+`;
+
+exports[`renderToHtml(widget) <Inject /> regular component without mount point className renders as a regular element 1`] = `
+<head></head>
+
+<body>
+  <div class="mount-point">
+    <div data-reactroot="">Hello ;)</div>
+  </div>
+</body>
+`;
+
+exports[`renderToHtml(widget) <Inject /> simple widget with mount point className renders correctly 1`] = `
+<head></head>
+
+<body>
+  <div id="0123456789abcdef" class="mount-point">
+    <section>625</section>
+  </div>
+  <script type="text/javascript">
+    Object.assign(["__WIDGET_DATA__", "simple--injected", "0123456789abcdef"].reduce(function(a, b) {
+      return a[b] = a[b] || {};
+    }, window), {
+      "props": {
+        "power": 4
+      },
+      "hydration": {
+        "simple--injected--f042b037451958bdc45147be8b9d937045a13c3523f59ba3514bebb4db43730c": {
+          "baseValue": 5
+        }
+      }
+    });
+  </script>
+</body>
+`;
+
+exports[`renderToHtml(widget) <Inject /> simple widget without mount point className renders correctly 1`] = `
+<head></head>
+
+<body>
+  <div id="0123456789abcdef">
+    <section>625</section>
+  </div>
+  <script type="text/javascript">
+    Object.assign(["__WIDGET_DATA__", "simple--injected", "0123456789abcdef"].reduce(function(a, b) {
+      return a[b] = a[b] || {};
+    }, window), {
+      "props": {
+        "power": 4
+      },
+      "hydration": {
+        "simple--injected--f042b037451958bdc45147be8b9d937045a13c3523f59ba3514bebb4db43730c": {
+          "baseValue": 5
+        }
+      }
+    });
+  </script>
+</body>
+`;
+
+exports[`renderToHtml(widget) <Inject /> styled nested widget renders correctly 1`] = `
+<head>
+  <style data-styled="hlMLmu gyATyc" data-styled-version="4.4.0">
+    /* sc-component-id: StyledSection-vjffju-0 */
+    .hlMLmu {
+      padding: 7px;
+      background: #bbb;
+    }
+
+    /* sc-component-id: StyledList-vjffju-1 */
+    .gyATyc {
+      margin: 7px;
+      background: #666;
+      color: #ddd;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="0123456789abcdef">
+    <section class="StyledSection-vjffju-0 hlMLmu">
+      <ul class="StyledList-vjffju-1 gyATyc">
+        <li>27</li>
+        <li>72</li>
+        <li>
+          <section>625</section>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <script type="text/javascript">
+    Object.assign(["__WIDGET_DATA__", "nested-with-styles--injected", "0123456789abcdef"].reduce(function(a, b) {
+      return a[b] = a[b] || {};
+    }, window), {
+      "props": {
+        "coefficient": 9
+      },
+      "hydration": {
+        "nested-with-styles--injected--27152bfa9d152695b053e71d6ee08263979ed379d64fa16bfd8efdbf85ee0ffa": {
+          "v": 3,
+          "w": 8
+        },
+        "simple--injected--f042b037451958bdc45147be8b9d937045a13c3523f59ba3514bebb4db43730c": {
+          "baseValue": 5
+        }
+      }
+    });
+  </script>
+</body>
+`;
+
+exports[`renderToHtml(widget) No context nested widget renders correctly 1`] = `
+<head></head>
+
+<body>
+  <div id="0123456789abcdef">
+    <section>
+      <ul>
+        <li>27</li>
+        <li>72</li>
+        <li>
+          <section>625</section>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <script type="text/javascript">
+    Object.assign(["__WIDGET_DATA__", "nested--no-context", "0123456789abcdef"].reduce(function(a, b) {
+      return a[b] = a[b] || {};
+    }, window), {
+      "props": {
+        "coefficient": 9
+      },
+      "hydration": {
+        "nested--no-context--27152bfa9d152695b053e71d6ee08263979ed379d64fa16bfd8efdbf85ee0ffa": {
+          "v": 3,
+          "w": 8
+        },
+        "simple--no-context--f042b037451958bdc45147be8b9d937045a13c3523f59ba3514bebb4db43730c": {
+          "baseValue": 5
+        }
+      }
+    });
+  </script>
+</body>
+`;
+
+exports[`renderToHtml(widget) No context regular component with mount point className renders as a regular element 1`] = `
+<head></head>
+
+<body>
+  <div>
+    <div data-reactroot="">Hello ;)</div>
+  </div>
+</body>
+`;
+
+exports[`renderToHtml(widget) No context regular component without mount point className renders as a regular element 1`] = `
+<head></head>
+
+<body>
+  <div class="mount-point">
+    <div data-reactroot="">Hello ;)</div>
+  </div>
+</body>
+`;
+
+exports[`renderToHtml(widget) No context simple widget with mount point className renders correctly 1`] = `
+<head></head>
+
+<body>
+  <div id="0123456789abcdef" class="mount-point">
+    <section>625</section>
+  </div>
+  <script type="text/javascript">
+    Object.assign(["__WIDGET_DATA__", "simple--no-context", "0123456789abcdef"].reduce(function(a, b) {
+      return a[b] = a[b] || {};
+    }, window), {
+      "props": {
+        "power": 4
+      },
+      "hydration": {
+        "simple--no-context--f042b037451958bdc45147be8b9d937045a13c3523f59ba3514bebb4db43730c": {
+          "baseValue": 5
+        }
+      }
+    });
+  </script>
+</body>
+`;
+
+exports[`renderToHtml(widget) No context simple widget without mount point className renders correctly 1`] = `
+<head></head>
+
+<body>
+  <div id="0123456789abcdef">
+    <section>625</section>
+  </div>
+  <script type="text/javascript">
+    Object.assign(["__WIDGET_DATA__", "simple--no-context", "0123456789abcdef"].reduce(function(a, b) {
+      return a[b] = a[b] || {};
+    }, window), {
+      "props": {
+        "power": 4
+      },
+      "hydration": {
+        "simple--no-context--f042b037451958bdc45147be8b9d937045a13c3523f59ba3514bebb4db43730c": {
+          "baseValue": 5
+        }
+      }
+    });
+  </script>
+</body>
+`;
+
+exports[`renderToHtml(widget) No context styled nested widget renders correctly 1`] = `
+<head>
+  <style data-styled="jRvOjh bKIwII" data-styled-version="4.4.0">
+    /* sc-component-id: StyledSection-uh7e4s-0 */
+    .jRvOjh {
+      padding: 7px;
+      background: #bbb;
+    }
+
+    /* sc-component-id: StyledList-uh7e4s-1 */
+    .bKIwII {
+      margin: 7px;
+      background: #666;
+      color: #ddd;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="0123456789abcdef">
+    <section class="StyledSection-uh7e4s-0 jRvOjh">
+      <ul class="StyledList-uh7e4s-1 bKIwII">
+        <li>27</li>
+        <li>72</li>
+        <li>
+          <section>625</section>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <script type="text/javascript">
+    Object.assign(["__WIDGET_DATA__", "nested-with-styles--no-context", "0123456789abcdef"].reduce(function(a, b) {
+      return a[b] = a[b] || {};
+    }, window), {
+      "props": {
+        "coefficient": 9
+      },
+      "hydration": {
+        "nested-with-styles--no-context--27152bfa9d152695b053e71d6ee08263979ed379d64fa16bfd8efdbf85ee0ffa": {
+          "v": 3,
+          "w": 8
+        },
+        "simple--no-context--f042b037451958bdc45147be8b9d937045a13c3523f59ba3514bebb4db43730c": {
+          "baseValue": 5
+        }
+      }
+    });
+  </script>
+</body>
+`;
+
+exports[`renderToHtml(widget) onData child overrides parent; last sibling wins accumulates the expected data 1`] = `
+Object {
+  "maxAge": 60,
+}
+`;
+
+exports[`renderToHtml(widget) onData parent overrides child; first sibling wins accumulates the expected data 1`] = `
+Object {
+  "maxAge": 30,
+}
+`;
+
+exports[`renderToHtml(widget) useWidgetState() nested widget renders correctly 1`] = `
+<head></head>
+
+<body>
+  <div id="0123456789abcdef">
+    <section>
+      <ul>
+        <li>27</li>
+        <li>72</li>
+        <li>
+          <section>625</section>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <script type="text/javascript">
+    Object.assign(["__WIDGET_DATA__", "nested--hooked", "0123456789abcdef"].reduce(function(a, b) {
+      return a[b] = a[b] || {};
+    }, window), {
+      "props": {
+        "coefficient": 9
+      },
+      "hydration": {
+        "nested--hooked--27152bfa9d152695b053e71d6ee08263979ed379d64fa16bfd8efdbf85ee0ffa": {
+          "v": 3,
+          "w": 8
+        },
+        "simple--hooked--f042b037451958bdc45147be8b9d937045a13c3523f59ba3514bebb4db43730c": {
+          "baseValue": 5
+        }
+      }
+    });
+  </script>
+</body>
+`;
+
+exports[`renderToHtml(widget) useWidgetState() regular component with mount point className renders as a regular element 1`] = `
+<head></head>
+
+<body>
+  <div>
+    <div data-reactroot="">Hello ;)</div>
+  </div>
+</body>
+`;
+
+exports[`renderToHtml(widget) useWidgetState() regular component without mount point className renders as a regular element 1`] = `
+<head></head>
+
+<body>
+  <div class="mount-point">
+    <div data-reactroot="">Hello ;)</div>
+  </div>
+</body>
+`;
+
+exports[`renderToHtml(widget) useWidgetState() simple widget with mount point className renders correctly 1`] = `
+<head></head>
+
+<body>
+  <div id="0123456789abcdef" class="mount-point">
+    <section>625</section>
+  </div>
+  <script type="text/javascript">
+    Object.assign(["__WIDGET_DATA__", "simple--hooked", "0123456789abcdef"].reduce(function(a, b) {
+      return a[b] = a[b] || {};
+    }, window), {
+      "props": {
+        "power": 4
+      },
+      "hydration": {
+        "simple--hooked--f042b037451958bdc45147be8b9d937045a13c3523f59ba3514bebb4db43730c": {
+          "baseValue": 5
+        }
+      }
+    });
+  </script>
+</body>
+`;
+
+exports[`renderToHtml(widget) useWidgetState() simple widget without mount point className renders correctly 1`] = `
+<head></head>
+
+<body>
+  <div id="0123456789abcdef">
+    <section>625</section>
+  </div>
+  <script type="text/javascript">
+    Object.assign(["__WIDGET_DATA__", "simple--hooked", "0123456789abcdef"].reduce(function(a, b) {
+      return a[b] = a[b] || {};
+    }, window), {
+      "props": {
+        "power": 4
+      },
+      "hydration": {
+        "simple--hooked--f042b037451958bdc45147be8b9d937045a13c3523f59ba3514bebb4db43730c": {
+          "baseValue": 5
+        }
+      }
+    });
+  </script>
+</body>
+`;
+
+exports[`renderToHtml(widget) useWidgetState() styled nested widget renders correctly 1`] = `
+<head>
+  <style data-styled="ifRRjV bdciVi" data-styled-version="4.4.0">
+    /* sc-component-id: StyledSection-sc-109tgme-0 */
+    .ifRRjV {
+      padding: 7px;
+      background: #bbb;
+    }
+
+    /* sc-component-id: StyledList-sc-109tgme-1 */
+    .bdciVi {
+      margin: 7px;
+      background: #666;
+      color: #ddd;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="0123456789abcdef">
+    <section class="StyledSection-sc-109tgme-0 ifRRjV">
+      <ul class="StyledList-sc-109tgme-1 bdciVi">
+        <li>27</li>
+        <li>72</li>
+        <li>
+          <section>625</section>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <script type="text/javascript">
+    Object.assign(["__WIDGET_DATA__", "nested-with-styles--hooked", "0123456789abcdef"].reduce(function(a, b) {
+      return a[b] = a[b] || {};
+    }, window), {
+      "props": {
+        "coefficient": 9
+      },
+      "hydration": {
+        "nested-with-styles--hooked--27152bfa9d152695b053e71d6ee08263979ed379d64fa16bfd8efdbf85ee0ffa": {
+          "v": 3,
+          "w": 8
+        },
+        "simple--hooked--f042b037451958bdc45147be8b9d937045a13c3523f59ba3514bebb4db43730c": {
+          "baseValue": 5
+        }
+      }
+    });
+  </script>
+</body>
+`;
