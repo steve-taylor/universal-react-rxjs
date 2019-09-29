@@ -1,6 +1,6 @@
 {
   "name": "universal-react-rxjs",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Create universal web apps with React and RxJS",
   "author": "Steve Taylor",
   "license": "MIT",
